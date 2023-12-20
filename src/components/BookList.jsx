@@ -3,8 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import SingleBook from "./SingleBook";
 
-import history from "../data/history.json";
-
 class BookList extends React.Component {
   constructor(props) {
     super(props);
@@ -27,10 +25,6 @@ class BookList extends React.Component {
 
     return (
       <main>
-        <div>
-          <h1>{history[0].title}</h1>
-        </div>
-
         <Container className="mb-5 d-flex justify-content-center">
           <input
             type="search"
